@@ -7,7 +7,7 @@
 
 ## Vue 2.0
 
-At the time of this writing Vue 2.0 and its router are in pre-release and as such there is limited documentation available.
+There is little documentation available for the pre-release states of Vue and its router. The API has not changed all that much however, and reading the [official documentation](https://vuejs.org/api/) is still incredibly useful.
 
 For the router, I recommend taking a look at the examples in the [next](https://github.com/vuejs/vue-router/tree/next) branch of the [official vue router repo](https://github.com/vuejs/vue-router).
 
