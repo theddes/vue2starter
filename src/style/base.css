@@ -1,0 +1,33 @@
+@import './fonts.css';
+@import './variables.css';
+
+* {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    text-rendering: geometricPrecision;
+}
+
+body {
+    background: var(--colorGrey);
+    color: var(--colorGrey);
+    font-family: 'Noto Sans';
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    &.active {
+        color: var(--colorWhite);
+    }
+}
+
+.page {
+    text-align: center;
+}
+
+code {
+    background-color: #f0f0f0;
+    border-radius: 2px;
+    padding: 3px 5px;
+}

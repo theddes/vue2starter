@@ -1,0 +1,22 @@
+@import '../../style/variables.css';
+
+:root {
+    --fontSize: 4rem;
+    --height: 150px;
+    --margin: 100px auto;
+    --radius: 50%;
+    --width: 150px;
+}
+
+.counter {
+    background: var(--colorGreyLight);
+    border-radius: var(--radius);
+    cursor: pointer;
+    font-size: var(--fontSize);
+    height: var(--height);
+    line-height: var(--height);
+    margin: var(--margin);
+    text-align: center;
+    user-select: none;
+    width: var(--width);
+}
