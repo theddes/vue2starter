@@ -1,5 +1,5 @@
 {
-  "name": "theddes-vuestarter",
+  "name": "vue2starter",
   "version": "0.0.1",
   "description": "A Vue.js starter using Vue 2, Vuex, Vue-router, Vue-resource, PostCSS and Webpack 2",
   "main": "src/index.js",
