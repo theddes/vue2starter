@@ -4,7 +4,7 @@
   "description": "A Vue.js starter using Vue 2, Vuex, Vue-router, Vue-resource, PostCSS and Webpack 2",
   "main": "src/index.js",
   "scripts": {
-    "build": "rm -rf public && webpack --config build/webpack.prod.js && cp build/.htaccess public/.htaccess",
+    "build": "rm -rf public && webpack --optimize-minimize --config build/webpack.prod.js && cp build/.htaccess public/.htaccess",
     "dev": "node build/server.js"
   },
   "dependencies": {
