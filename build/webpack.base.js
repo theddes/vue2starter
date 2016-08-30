@@ -9,11 +9,12 @@ const postcss = [
     }),
     require('postcss-apply'),
     require('postcss-nested'),
+    require('postcss-placehold'),
     require('postcss-reporter'),
-    require('lost'),
     require('postcss-font-magician')({
         // hosted: '../fonts'
-    })
+    }),
+    require('lost')
 ]
 
 module.exports = {

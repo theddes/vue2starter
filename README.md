@@ -22,8 +22,23 @@ Using the [Vue Devtools](https://github.com/vuejs/vue-devtools) is also highly r
 - Webpack 2
 - Babel 6
 - Hot reloading
-- PostCSS (with [autoprefixer](https://github.com/postcss/autoprefixer), [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-nested](https://github.com/postcss/postcss-nested), [postcss-reporter](https://github.com/postcss/postcss-reporter) and [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician))
+- PostCSS (with [autoprefixer](https://github.com/postcss/autoprefixer), [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-nested](https://github.com/postcss/postcss-nested), [postcss-reporter](https://github.com/postcss/postcss-reporter), [postcss-placehold](https://github.com/awayken/postcss-placehold) and [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician))
 - [LostGrid](https://github.com/peterramsing/lost)
+
+#### postcss-placehold
+This plugin makes it easy to drop in placeholder images from placehold.it, like so:
+```css
+div {
+    background: placehold(400, 400);
+}
+```
+
+#### postcss-font-magician
+Generates @font-face rules for you.
+All you need to do is specify the font-family name and the plugin will look up and load the corresponding font from Google Fonts or Bootstrap.
+
+_If you have local fonts you wish to use, add it at line 15 in build/webpack.base.js. They will be scanned and added automatically.
+Refer to Github for additional configuration options._
 
 ## Get started
 
@@ -35,5 +50,7 @@ $ npm run dev
 # bundle all scripts and styles for production use
 $ npm run build
 ```
+
+---
 
 ![](https://i.imgur.com/9XCIaET.jpg "Enjoy!")
