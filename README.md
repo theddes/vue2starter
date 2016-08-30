@@ -22,7 +22,7 @@ Using the [Vue Devtools](https://github.com/vuejs/vue-devtools) is also highly r
 - Webpack 2
 - Babel 6
 - Hot reloading
-- PostCSS (with [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-import](https://github.com/postcss/postcss-import), [postcss-loader](https://github.com/postcss/postcss-loader), [postcss-nested](https://github.com/postcss/postcss-nested) and [postcss-reporter](https://github.com/postcss/postcss-reporter))
+- PostCSS (with [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-import](https://github.com/postcss/postcss-import), [postcss-loader](https://github.com/postcss/postcss-loader), [postcss-nested](https://github.com/postcss/postcss-nested), [postcss-reporter](https://github.com/postcss/postcss-reporter) and [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician))
 
 ## Get started
 
