@@ -1,1 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+/*
+    By default, font-magician (https://github.com/jonathantneal/postcss-font-magician) is included so you won't need to add any @font-face rules yourself.
+    You can even specify Google font names! :)
+*/

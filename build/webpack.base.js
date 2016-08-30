@@ -7,10 +7,12 @@ const postcss = [
     require('autoprefixer')({
         browsers: ['last 2 versions', 'ie > 8']
     }),
-    // require('postcss-import')
     require('postcss-apply'),
     require('postcss-nested'),
-    require('postcss-reporter')
+    require('postcss-reporter'),
+    require('postcss-font-magician')({
+        // hosted: '../fonts'
+    })
 ]
 
 module.exports = {
