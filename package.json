@@ -30,7 +30,6 @@
     "image-webpack-loader": "^2.0.0",
     "postcss-apply": "^0.3.0",
     "postcss-font-magician": "^1.4.0",
-    "postcss-import": "^8.1.2",
     "postcss-loader": "^0.9.1",
     "postcss-nested": "^1.0.0",
     "postcss-reporter": "^1.4.1",
