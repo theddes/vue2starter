@@ -4,6 +4,7 @@
 /*
     sample taken from repo: https://github.com/peterramsing/lost
 */
+@lost gutter 10px;
 .lostgrid {
     margin-top: 100px;
 
