@@ -2,7 +2,7 @@
     <div class="page">
         <counter></counter>
         <p>
-            <router-link to="/">Home</router-link>
+            <router-link to="/lostgrid">Lostgrid sample</router-link>
         </p>
     </div>
 </template>

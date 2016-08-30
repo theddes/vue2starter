@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const Home = require('../views/Home')
+const Lost = require('../views/Lost')
 
 const router = new VueRouter({
     mode: 'history',
@@ -20,6 +21,11 @@ const router = new VueRouter({
                 console.log('index route hook beforeEnter', route)
                 next()
             }
+        },
+        {
+            name: 'Lost',
+            path: '/lostgrid',
+            component: Lost
         }
     ]
 })

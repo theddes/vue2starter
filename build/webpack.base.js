@@ -10,6 +10,7 @@ const postcss = [
     require('postcss-apply'),
     require('postcss-nested'),
     require('postcss-reporter'),
+    require('lost'),
     require('postcss-font-magician')({
         // hosted: '../fonts'
     })

@@ -8,6 +8,7 @@ const app = express()
 
 const compiler = webpack(config)
 
+// https://github.com/webpack/webpack-dev-middleware for more options etc
 const devMiddleWare = require('webpack-dev-middleware')(compiler, {
     publicPath: config.output.publicPath,
     stats: {

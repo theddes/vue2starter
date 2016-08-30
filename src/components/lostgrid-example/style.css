@@ -1,0 +1,30 @@
+@import '../../style/variables.css';
+
+
+/*
+    sample taken from repo: https://github.com/peterramsing/lost
+*/
+.lostgrid {
+    margin-top: 100px;
+
+    div {
+        lost-column: 2/4 2;
+        background-color: white;
+    }
+
+    .row {
+        lost-utility: clearfix;
+    }
+
+    .quarter {
+        lost-column: 1/4 0;
+    }
+
+    .thirds {
+        lost-column: 1/3 0;
+    }
+
+    .half {
+        lost-column: 1/2 0;
+    }
+}
