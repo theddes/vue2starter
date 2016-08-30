@@ -1,4 +1,5 @@
 /*
     By default, font-magician (https://github.com/jonathantneal/postcss-font-magician) is included so you won't need to add any @font-face rules yourself.
-    You can even specify Google font names! :)
+    You can use any Google Font family names and they will be automatically imported.
+    If you want to use local fonts, make sure you specify the directory at line 15 in build/webpack.base.js.
 */
