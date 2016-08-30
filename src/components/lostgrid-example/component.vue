@@ -1,14 +1,20 @@
 <template>
     <div class="lostgrid">
-        <section class="row">
-            <div class="quarter">1</div>
-            <div class="half">2</div>
-            <div class="quarter">3</div>
-        </section>
+        <transition-group name="fade" tag="section" class="row" appear>
+            <div v-for="(item, index) in items"
+                :key="index"
+                class="half">{{ index + 1}}</div>
+        </transition>
     </div>
 </template>
 
 <script>
     import style from './style.css'
-    export default {}
+    export default {
+        data () {
+            return {
+                items: 5
+            }
+        }
+    }
 </script>

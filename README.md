@@ -8,6 +8,8 @@
 
 There is little documentation available for the pre-release states of Vue and its router. Luckily the API has not changed all that much, and reading the [official documentation](https://vuejs.org/api/) is still incredibly useful.
 
+Also extremely valuable is the [changelog](https://github.com/vuejs/vue/issues/2873)!
+
 For the router, I recommend taking a look at the examples in the [next](https://github.com/vuejs/vue-router/tree/next) branch of the [official vue router repo](https://github.com/vuejs/vue-router).
 
 Using the [Vue Devtools](https://github.com/vuejs/vue-devtools) is also highly recommended (includes Vuex timeline so you can travel through your app state).
