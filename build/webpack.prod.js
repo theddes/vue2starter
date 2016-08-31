@@ -20,8 +20,9 @@ config.output.filename = '[name].[chunkhash:8].js'
 
 config.plugins.push(
     new ProgressBarPlugin({
+        complete: chalk.green('='),
         clear: false,
-        format: '  build [:bar] ' + chalk.blue.bold(':percent') + ' (:elapsed seconds)',
+        format: '  build [:bar] ' + chalk.blue.bold(':percent') + ' - :elapsed seconds',
         renderThrottle: 3,
         width: 100
     }),
