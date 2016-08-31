@@ -10,6 +10,9 @@ const state = {
 const mutations = {
     INCREMENT(state) {
         state.count++
+    },
+    DECREMENT(state) {
+        state.count--
     }
 }
 
@@ -21,7 +24,10 @@ const actions = {
         setTimeout(() => {
             commit('INCREMENT')
         }, 1000)
-    }
+    },
+    DECREMENT({commit}) {
+        commit('DECREMENT')
+    },
 }
 
 const store = new Vuex.Store({

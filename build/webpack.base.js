@@ -10,11 +10,12 @@ const postcss = [
     require('postcss-apply'),
     require('postcss-nested'),
     require('postcss-placehold'),
-    require('postcss-reporter'),
     require('postcss-font-magician')({
         // hosted: '../fonts'
     }),
-    require('lost')
+    require('lost'),
+    require('postcss-focus'),
+    require('postcss-reporter')
 ]
 
 module.exports = {

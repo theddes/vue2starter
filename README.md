@@ -35,7 +35,7 @@ $ npm run build
 - Webpack 2
 - Babel 6
 - Hot reloading
-- PostCSS (with [autoprefixer](https://github.com/postcss/autoprefixer), [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-nested](https://github.com/postcss/postcss-nested), [postcss-reporter](https://github.com/postcss/postcss-reporter), [postcss-placehold](https://github.com/awayken/postcss-placehold) and [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician))
+- PostCSS (with [autoprefixer](https://github.com/postcss/autoprefixer), [postcss-apply](https://github.com/pascalduez/postcss-apply), [postcss-nested](https://github.com/postcss/postcss-nested), [postcss-reporter](https://github.com/postcss/postcss-reporter), [postcss-placehold](https://github.com/awayken/postcss-placehold), [postcss-focus](https://github.com/postcss/postcss-focus), and [postcss-font-magician](https://github.com/jonathantneal/postcss-font-magician))
 - [LostGrid](https://github.com/peterramsing/lost)
 
 ##### LostGrid

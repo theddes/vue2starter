@@ -1,6 +1,7 @@
 'use strict'
 const path = require('path')
 const webpack = require('webpack')
+const chalk = require('chalk')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 const config = require('./webpack.base')
@@ -18,7 +19,12 @@ config.entry.vendor = Object.keys(pkg.dependencies).filter(name => {
 config.output.filename = '[name].[chunkhash:8].js'
 
 config.plugins.push(
-    new ProgressBarPlugin(),
+    new ProgressBarPlugin({
+        clear: false,
+        format: '  build [:bar] ' + chalk.blue.bold(':percent') + ' (:elapsed seconds)',
+        renderThrottle: 3,
+        width: 100
+    }),
     new ExtractTextPlugin('styles.[contenthash:8].css'),
     new webpack.DefinePlugin({
         'process.env.NODE_ENV': JSON.stringify('production')

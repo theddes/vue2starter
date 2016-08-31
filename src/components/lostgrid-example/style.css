@@ -1,16 +1,18 @@
 @import '../../style/variables.css';
 
-
 /*
     sample taken from repo: https://github.com/peterramsing/lost
 */
 @lost gutter 10px;
 .lostgrid {
-    margin-top: 100px;
+    --lostMarginBottom: 10px;
+    --marginTop: 100px;
+
+    margin-top: var(--marginTop);
 
     div {
         lost-column: 2/4 0;
-        margin-bottom: 10px;
+        margin-bottom: var(--lostMarginBottom);
         background-color: white;
     }
 

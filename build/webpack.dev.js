@@ -2,6 +2,8 @@
 const webpack = require('webpack')
 const config = require('./webpack.base')
 
+const WebpackBrowserPlugin = require('webpack-browser-plugin')
+
 config.output.publicPath = '/'
 config.entry.src = ['webpack-hot-middleware/client', config.entry.src]
 config.plugins.push(
@@ -9,7 +11,12 @@ config.plugins.push(
         'process.env.NODE_ENV': JSON.stringify('development')
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new webpack.NoErrorsPlugin()
+    new webpack.NoErrorsPlugin(),
+    new WebpackBrowserPlugin({
+        browser: 'Chrome',
+        port: 4000,
+        url: 'http://localhost'
+    })
 )
 
 config.module.loaders.push({

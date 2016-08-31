@@ -1,5 +1,17 @@
+.pop-move, .pop-enter-active, .pop-leave-active {
+    transition: all .5s cubic-bezier(.22,.69,.33,1.27);
+}
+.pop-enter {
+    opacity: 0;
+    transform: scale(0);
+}
+.pop-leave {
+    opacity: 0;
+    transform: scale(0);
+}
+
 .fade-move, .fade-enter-active, .fade-leave-active {
-    transition: all .5s cubic-bezier(.55,0,.1,1);
+    transition: all .6s cubic-bezier(.55,0,.1,1);
 }
 .fade-enter {
     opacity: 0;

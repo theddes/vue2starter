@@ -3,6 +3,7 @@ const path = require('path')
 const express = require('express')
 const webpack = require('webpack')
 const config = require('./webpack.dev')
+const chalk = require('chalk')
 
 const app = express()
 
@@ -12,11 +13,12 @@ const compiler = webpack(config)
 const devMiddleWare = require('webpack-dev-middleware')(compiler, {
     publicPath: config.output.publicPath,
     stats: {
-        colors: true,
-        modules: false,
+        assetsSort: 'name',
         children: false,
+        chunkModules: false,
         chunks: false,
-        chunkModules: false
+        colors: true,
+        modules: false
     }
 })
 app.use(devMiddleWare)
@@ -30,5 +32,5 @@ app.get('*', (req, res) => {
 })
 
 app.listen(4000, () => {
-    console.log(`Listening at http://localhost:4000`)
+    console.log(`| Listening at http://localhost:4000\n` + chalk.blue.bold('  Launching app when ready...\n'))
 })
