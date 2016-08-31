@@ -45,7 +45,7 @@ LostGrid is a powerful grid system that makes it easy to generate column based l
 Generates @font-face rules for you.
 All you need to do is specify the font-family name and the plugin will look up and load the corresponding font from Google Fonts or Bootstrap.
 
-_If you have local fonts you wish to use, add it at line 15 in build/webpack.base.js. They will be scanned and added automatically.
+_If you have local fonts you wish to use, add it at (or around) line 15 in build/webpack.base.js. They will be scanned and added automatically.
 Refer to Github for additional configuration options._
 
 ##### postcss-placehold
