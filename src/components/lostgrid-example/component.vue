@@ -4,7 +4,7 @@
             <div v-for="(item, index) in items"
                 :key="index"
                 class="half">{{ index + 1}}</div>
-        </transition>
+        </transition-group>
     </div>
 </template>
 
